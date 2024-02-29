@@ -128,14 +128,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases git asdf zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion auto-notify sudo autojump common-aliases colorize vscode fzf postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-pyenv autoswitch_virtualenv zsh-syntax-highlighting)
+plugins=(aliases git asdf zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion auto-notify sudo autojump common-aliases colorize vscode fzf-zsh-plugin postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-syntax-highlighting)
+
+# Unused plugins
+# zsh-pyenv autoswitch_virtualenv
 
 export DISABLE_FZF_AUTO_COMPLETION="false"
 export DISABLE_FZF_KEY_BINDINGS="false"
 
+source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 source $ZSH/oh-my-zsh.sh
 
-source $PLUGINS/zsh-pyenv/zsh-pyenv.plugin.zsh
+# source $PLUGINS/zsh-pyenv/zsh-pyenv.plugin.zsh
 
 
 # User configuration
@@ -200,8 +205,6 @@ export FORCE_COLOR=true
 alias bm="chrome-bookmark-browser"
 
 eval "$(rbenv init - zsh)"
-
-source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

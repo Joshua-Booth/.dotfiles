@@ -19,9 +19,17 @@ cp ./.zshrc ~
 
 zshrc() {
     echo "==========================================================="
+    echo "             cloning zsh-nvm                               "
+    echo "-----------------------------------------------------------"
+    git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+    echo "==========================================================="
     echo "             cloning asdf zsh plugin                       "
     echo "-----------------------------------------------------------"
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+    echo "==========================================================="
+    echo "             cloning autojump                              "
+    echo "-----------------------------------------------------------"
+    git clone git://github.com/wting/autojump.git ~/autojump
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
@@ -31,9 +39,33 @@ zshrc() {
     echo "-----------------------------------------------------------"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     echo "==========================================================="
+    echo "             cloning cd-reminder                           "
+    echo "-----------------------------------------------------------"
+    git clone https://github.com/bartboy011/cd-reminder ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/cd-reminder
+    echo "==========================================================="
     echo "             cloning zsh-bd                                "
     echo "-----------------------------------------------------------"
     git clone https://github.com/Tarrasch/zsh-bd.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/bd
+    echo "==========================================================="
+    echo "             cloning zsh-better-npm-completion             "
+    echo "-----------------------------------------------------------"
+    git clone https://github.com/lukechilds/zsh-better-npm-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-better-npm-completion
+    echo "==========================================================="
+    echo "             cloning zsh-auto-notify                       "
+    echo "-----------------------------------------------------------"
+    git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/auto-notify
+    echo "==========================================================="
+    echo "             cloning zsh-dircolors-nord                    "
+    echo "-----------------------------------------------------------"
+    git clone --recursive https://github.com/coltondick/zsh-dircolors-nord.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-dircolors-nord
+    echo "==========================================================="
+    echo "             cloning caniuse                               "
+    echo "-----------------------------------------------------------"
+    git clone --recursive https://github.com/walesmd/caniuse.plugin.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/caniuse
+    echo "==========================================================="
+    echo "             cloning fzf-zsh-plugin                        "
+    echo "-----------------------------------------------------------"
+    git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
     echo "==========================================================="
     echo "             cloning powerlevel10k                         "
     echo "-----------------------------------------------------------"
