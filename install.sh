@@ -26,11 +26,11 @@ zshrc() {
     echo "             cloning asdf zsh plugin                       "
     echo "-----------------------------------------------------------"
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-    echo "==========================================================="
-    echo "             cloning autojump                              "
-    echo "-----------------------------------------------------------"
-    git clone git://github.com/wting/autojump.git
-    cd autojump && ./install.py && cd .. && rm -rf autojump
+    # echo "==========================================================="
+    # echo "             cloning autojump                              "
+    # echo "-----------------------------------------------------------"
+    # git clone git://github.com/wting/autojump.git
+    # cd autojump && ./install.py && cd .. && rm -rf autojump
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
@@ -51,11 +51,11 @@ zshrc() {
     echo "             cloning zsh-better-npm-completion             "
     echo "-----------------------------------------------------------"
     git clone https://github.com/lukechilds/zsh-better-npm-completion ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-better-npm-completion
-    echo "==========================================================="
-    echo "             cloning zsh-auto-notify                       "
-    echo "-----------------------------------------------------------"
-    sudo apt-get install libnotify-bin
-    git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/auto-notify
+    # echo "==========================================================="
+    # echo "             cloning zsh-auto-notify                       "
+    # echo "-----------------------------------------------------------"
+    # sudo apt-get install libnotify-bin
+    # git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/auto-notify
     echo "==========================================================="
     echo "             cloning zsh-dircolors-nord                    "
     echo "-----------------------------------------------------------"

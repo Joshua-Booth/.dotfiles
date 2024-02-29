@@ -128,10 +128,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases git asdf zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion auto-notify sudo autojump common-aliases colorize vscode fzf-zsh-plugin postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-syntax-highlighting)
+plugins=(aliases git asdf zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion sudo common-aliases colorize vscode fzf-zsh-plugin postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-syntax-highlighting)
 
 # Unused plugins
-# zsh-pyenv autoswitch_virtualenv
+# zsh-pyenv autoswitch_virtualenv auto-notify autojump
 
 export DISABLE_FZF_AUTO_COMPLETION="false"
 export DISABLE_FZF_KEY_BINDINGS="false"
