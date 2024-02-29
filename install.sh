@@ -21,7 +21,7 @@ zshrc() {
     echo "==========================================================="
     echo "             cloning zsh-nvm                               "
     echo "-----------------------------------------------------------"
-    git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+    git clone https://github.com/lukechilds/zsh-nvm.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-nvm
     echo "==========================================================="
     echo "             cloning asdf zsh plugin                       "
     echo "-----------------------------------------------------------"
@@ -29,7 +29,8 @@ zshrc() {
     echo "==========================================================="
     echo "             cloning autojump                              "
     echo "-----------------------------------------------------------"
-    git clone git://github.com/wting/autojump.git ~/autojump
+    git clone git://github.com/wting/autojump.git
+    cd autojump && ./install.py && cd .. && rm -rf autojump
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
@@ -53,6 +54,7 @@ zshrc() {
     echo "==========================================================="
     echo "             cloning zsh-auto-notify                       "
     echo "-----------------------------------------------------------"
+    sudo apt-get install libnotify-bin
     git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/auto-notify
     echo "==========================================================="
     echo "             cloning zsh-dircolors-nord                    "
