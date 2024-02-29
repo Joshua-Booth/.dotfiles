@@ -35,7 +35,7 @@ export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
 export ZSH="${HOME}/.oh-my-zsh"
 
 # Custom Plugins
-export PLUGINS="/Users/joshua/.oh-my-zsh/custom/plugins"
+export PLUGINS="${HOME}/.oh-my-zsh/custom/plugins"
 
 # Default Editor
 export EDITOR="code -w"
@@ -204,7 +204,7 @@ export FORCE_COLOR=true
 
 alias bm="chrome-bookmark-browser"
 
-eval "$(rbenv init - zsh)"
+# eval "$(rbenv init - zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -223,7 +223,7 @@ export NVM_DIR="$HOME/.nvm"
 # source /Users/joshua/.config/broot/launcher/bash/br
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export PATH="/Users/joshua/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
 
