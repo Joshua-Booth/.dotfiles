@@ -32,7 +32,7 @@ export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
 # fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/joshua/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Custom Plugins
 export PLUGINS="/Users/joshua/.oh-my-zsh/custom/plugins"
@@ -128,7 +128,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases git zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion auto-notify sudo autojump common-aliases colorize vscode fzf postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-pyenv autoswitch_virtualenv zsh-syntax-highlighting)
+plugins=(aliases git asdf zsh-nvm zsh-autosuggestions cd-reminder npm zsh-better-npm-completion auto-notify sudo autojump common-aliases colorize vscode fzf postgres zsh-dircolors-nord caniuse web-search frontend-search zsh-pyenv autoswitch_virtualenv zsh-syntax-highlighting)
 
 export DISABLE_FZF_AUTO_COMPLETION="false"
 export DISABLE_FZF_KEY_BINDINGS="false"
@@ -205,8 +205,6 @@ source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # zsh-bd
 . $HOME/.oh-my-zsh/custom/plugins/bd/bd.zsh
