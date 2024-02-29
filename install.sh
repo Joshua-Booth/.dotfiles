@@ -85,6 +85,8 @@ zshrc() {
 
 zshrc
 
+source ~/.zshrc
+
 # make directly highlighting readable - needs to be after zshrc line
 echo "" >> ~/.zshrc
 echo "# remove ls and directory completion highlight color" >> ~/.zshrc
