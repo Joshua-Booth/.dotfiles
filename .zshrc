@@ -212,7 +212,7 @@ alias bm="chrome-bookmark-browser"
 # zsh-bd
 . $HOME/.oh-my-zsh/custom/plugins/bd/bd.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 export NVM_AUTOLOAD=1
 
